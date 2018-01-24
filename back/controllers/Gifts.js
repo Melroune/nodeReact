@@ -84,6 +84,7 @@ const Gifts = {
 		    }
 		    console.log('Message sent: ' + info.response);
 		});
+		res.status(200).send('mail sent')
     }
 }
 

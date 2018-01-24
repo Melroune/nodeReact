@@ -32,8 +32,6 @@ class App extends Component {
 	   data: {
 		 "list": str,
 	   }
-	  }).then((result) => {
-	   this.setState({"gifts": result.data})
 	  })
   }
 
@@ -48,7 +46,6 @@ class App extends Component {
 
 	addGift(e){
 		e.preventDefault();
-		console.log(e.target[0].value);
 		if(!e.target[0].value || e.target[0].value === '') return
 		else{
 			axios({
