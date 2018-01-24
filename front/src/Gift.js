@@ -2,15 +2,12 @@ import React, { Component } from 'react';
 import './Gift.css';
 
 class Gift extends Component {
-  constructor(props){
-    super(props); 
-  }
 
   render() {
     return (
       <div className="Gift">
-        UN SUPER CADEAU
-        <button className="remove">X</button>
+        {this.props.name}
+        <button className="remove" onClick={this.props.remove}>X</button>
       </div>
     );
   }
